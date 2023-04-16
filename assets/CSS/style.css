@@ -172,8 +172,8 @@ main {
     gap: 16px;
     background:#f2f0f0;
     position: relative;
-    width: 100%;
-    height: 836px;
+    width: 1440px;
+    height: 938px;
     left: 1px;
     top: 75px;
     
@@ -199,8 +199,9 @@ max-height: 23px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 20px;
+font-size: 18px;
 line-height: 23px;
+text-transform: capitalize;
 
 color: #000000;
 flex: none;
@@ -210,9 +211,18 @@ flex-grow: 0;
 
 main section article .legenda-video{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 20px;
+    gap: 16px;
+    
     position: absolute;
-    flex-direction: row;
-    width: 100%;
+    width: 952px;
+    height: 746px;
+    left:56px;
+    top: 189px;
 }
 
 main section article .legenda-video ul{
@@ -221,11 +231,13 @@ main section article .legenda-video ul{
     list-style: none;
     justify-content:space-between;
     align-items: center;
-    padding:2rem 8rem;
+    padding:0;
     gap: 42px;
-    
-    width: 1102px;
-    height: 42px;
+    position: absolute;
+    width: 882px;
+    height: 546px;
+    left:0px;
+    top:84px;
     
     
     /* Inside auto layout */
@@ -235,9 +247,22 @@ main section article .legenda-video ul{
     flex-grow: 0;
 }
 main section article .legenda-video ul li{
-    flex-grow: 0;
+    flex-grow: 0 5;
+    font-size:12px;
     flex-shrink: 1;
     flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content:end;
+    padding:0;
+    float:center;   
+}
+main section article .legenda-video ul li img{
+    margin:10px 15px 0 0;
+    width: 25px;
+    height: 25px;
+    float:center;
+    top:22px;
+    
     
 }
 
@@ -249,9 +274,9 @@ main section article .legenda-video ul li span{
     flex-direction: row;
     float:right;
     position:absolute;
-    top:12px;
+    top:250px;
     right:0.5px;
-    left:180px;
+    left:92px;
     bottom:1px;
     width: 106px;
     height: 32px;
@@ -269,27 +294,66 @@ main section article .legenda-video ul li span{
     
    
 }
+main section article .legenda-video b{
+    position:absolute;
+     width: 800px;
+    height: 10px;
+    margin:1rem 1em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding:2rem;
+    line-height: 16px;
+    color: #000000;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    top:360px;
+}
+main section article .legenda-video p{
+    width: 510px;
+height: 610px;
+margin:1rem 3rem;
+position: absolute;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+top:450px;
+color: #515151;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 4;
+flex-grow: 0;
+}
 
 main section article .legenda-video ul li:nth-child(1){
     flex: 1;
     flex-grow: 1;
-    margin:0 5px;
+    font-size:14px;
+    margin:0 50px;
     justify-content: center;
-    float:right;
+    float:center;
     align-items: center;
-    top:5px;
+    
+   
     
     
 }
 
 
 main section article .legenda-video ul li:nth-child(2){
-    width: 159px;
+    width: 129px;
     height: 40px;
     text-align: center;
     background: #CC0000;
     position: absolute;
-    right:980px;
+    right:530px;
     border-radius: 2px;
     font-family: 'Roboto';
     font-style: normal;
@@ -340,18 +404,21 @@ main .lista-de-videos ul li{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding:0;
+    align-items:flex-start;
+    padding: 30px 0 0;
+    width: 196px;
     gap:16;
     position:relative;
-
+    height: 89px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
-font-size: 14px;
+font-size: 12px;
 line-height: 16px;
 
-color: #000000;
+
+color: #515151;
+;
 
 
 }
@@ -360,13 +427,15 @@ main  section .lista-de-videos ul li video{
     display:flex;
     flex-direction: row;
     flex-basis: content;
-    top:0;
+    top: -30px;
+    width: 196px;
     max-width:260px;
     max-height:90px;
+    height:89px;
     order:0;
     flex-grow: 0;
-    margin:0.2rem 10px;
-    padding: 0.1rem;
+    margin:0px 10px;
+    padding: 0.3rem 0.5rem;
     flex-wrap: nowrap;
     flex-shrink: 5;
     position:relative;
@@ -374,7 +443,21 @@ main  section .lista-de-videos ul li video{
    
 } 
 
+main  section .lista-de-videos ul li  span{
+    position: absolute;
+width: 196px;
+height: 32px;
+left: 195px;
+top: 0px;
 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
 
 
 
